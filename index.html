@@ -16,11 +16,11 @@
         body {
             font-family: Arial, sans-serif;
             background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(jaringan\ komputer.webp);
-            background-size: cover;
+            background-size: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            flex-direction: column;
             position: relative;
         }
 
@@ -33,10 +33,18 @@
             color: #ffffff;
         }
 
+        .card-container {
+            display: flex;
+            margin-top: 150px;
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+            width: 100%;
+        }
+
         .card {
             display: flex;
             background-color: rgba(0, 0, 0, 0.763);
-            margin-top: -7%;
             width: 80%;
             height: 50%;
             border: 1px solid #000000;
@@ -90,23 +98,228 @@
             background: url('saya.jpg') no-repeat center center;
             background-size: cover;
         }
+
+        .router {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.763);
+            width: 80%;
+            height: 50%;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: -17px;
+        }
+
+        .router-left {
+            padding: 20px;
+            width: 65%;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
+        }
+
+        .router-left h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e9e9e9;
+            margin-top: 30px;
+        }
+
+        .router-left h2 {
+            font-size: 23px;
+            color: #fff;
+            margin-top: 20px;
+
+        }
+
+        .router-left p {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #dadada;
+        }
+
+        .router-left .company-info {
+            margin-top: 30px;
+            border-top: 1px solid #c8c8c8;
+            padding-top: 20px;
+        }
+
+        .router-left .company-info p {
+            font-size: 18px;
+            color: #dedede;
+        }
+
+        .router-right {
+            width: 35%;
+            background: url('router.webp') no-repeat center center;
+            background-size: 250px;
+        }
+
+        .routerr-right {
+            width: 35%;
+            background: url('switch.webp') no-repeat center center;
+            background-size: 250px;
+        }
+
+        .routerrr-right {
+            width: 35%;
+            background: url('firewall.webp') no-repeat center center;
+            background-size: 250px;
+        }
+
+        .routerrrr-right {
+            width: 35%;
+            background: url('accespoint.webp') no-repeat center center;
+            background-size: 250px;
+        }
+
+        .jaringan {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.763);
+            width: 80%;
+            height: 100%;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: -17px;
+        }
+
+        .jaringann {
+            width: 100%;
+        }
+
+        .jaringan h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e9e9e9;
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .jaringan p {
+            margin-top: -50px;
+            margin-bottom: -40px;
+            font-size: 20px;
+            color: #dadada;
+            text-align: center;
+            padding: 80px;
+        }
+
+        .jaringan a {
+            font-size: 36px;
+            font-family: 'Poppins', sans-serif;
+            color: #e9e9e9;
+            margin: 400px;
+            padding: 100px;
+        }
     </style>
 </head>
 <body>
     <h1 class="page-title">Jaringan Komputer</h1>
-    <div class="card">
-        <div class="card-left">
-            <h1>Andi Farhan Ashari</h1>
-            <p>607012300056</p>
-            <h2>D3SI-48-05</h2>
+    <div class="card-container">
+        <div class="card">
+            <div class="card-left">
+                <h1>Andi Farhan Ashari</h1>
+                <p>607012300056</p>
+                <h2>D3SI-48-05</h2>
 
+                <div class="company-info">
+                    <p><strong>Telkom University</strong></p>
+                </div>
+            </div>
+            <div class="card-right"></div>
+        </div><br>
 
-            <div class="company-info">
-                <p><strong>Telkom University</strong></p>
+        <div class="jaringan">
+            <div class="jaringann">
+                <h1>Jaringan Komputer</h1>
+                <p>Jaringan komputer adalah sistem yang menghubungkan perangkat komputer untuk saling bertukar data, informasi, dan sumber daya. Perangkat yang terhubung dalam jaringan komputer bisa berupa komputer pribadi, laptop, tablet, smartphone, printer, dan server.<br><br>Jaringan komputer dibangun dengan kombinasi perangkat keras (hardware) dan perangkat lunak (software). Perangkat-perangkat tersebut terhubung melalui media transmisi seperti kabel atau sinyal nirkabel.  Tujuan utama dari jaringan komputer adalah untuk menciptakan sistem yang efisien dan terintegrasi untuk mempermudah aktivitas manusia.</p>
+            </div>
+        </div><br>
+
+        <div class="jaringan">
+            <div class="jaringann">
+                <h1>Jenis Perangkat Jaringan</h1>
+                <p>Komponen jaringan komputer terdiri dari perangkat keras, perangkat lunak, dan infrastruktur. Komponen-komponen tersebut bekerja bersama untuk memungkinkan komunikasi data antar perangkat.</p>
             </div>
         </div>
-        <div class="card-right"></div>
-    </div>
 
+        <div class="router">
+            <div class="router-left">
+                <h1>Router</h1>
+                <h2>1. Pengertian Router</h2>
+                <p>Router adalah perangkat yang berfungsi untuk menghubungkan perangkat ke jaringan internet dan mengatur lalu lintas data antar jaringan</p>
+                <h2>2. Fungsi Router</h2>
+                <p>Router mengatur lalu lintas data antar jaringan dan mendistribusikan koneksi internet ke beberapa perangkat.</p>
+                <h2>3. Cara Kerja Router</h2>
+                <p>Router meneruskan paket data ke alamat IP dari perangkat yang terhubung, sehingga perangkat-perangkat tersebut dapat terhubung ke jaringan internet yang sama.</p>
+
+                <div class="company-info">
+                    <p><strong>Gambar berasal dari ChatGPT</strong></p>
+                </div>
+            </div>
+            <div class="router-right"></div>
+        </div>
+
+        <div class="router">
+            <div class="router-left">
+                <h1>Switch</h1>
+                <h2>1. Pengertian Switch</h2>
+                <p>Perangkat yang digunakan untuk menghubungkan perangkat dalam jaringan lokal (LAN).</p>
+                <h2>2. Fungsi Switch</h2>
+                <p>Switch berfungsi untuk menghubungkan beberapa perangkat dalam jaringan lokal (LAN). Switch juga berfungsi untuk mengarahkan dan meneruskan paket data antar perangkat berdasarkan alamat Media Access Control (MAC).</p>
+                <h2>3. Cara Kerja Switch</h2>
+                <p>Switch bekerja di Layer 2 (data link) dengan menggunakan alamat MAC untuk memforward data hanya ke perangkat yang sesuai.<p>
+
+                <div class="company-info">
+                    <p><strong>Gambar berasal dari ChatGPT</strong></p>
+                </div>
+            </div>
+            <div class="routerr-right"></div>
+        </div>
+
+        <div class="router">
+            <div class="router-left">
+                <h1>Firewall</h1>
+                <h2>1. Pengertian Firewall</h2>
+                <p>Perangkat yang melindungi jaringan dari ancaman keamanan dengan memfilter lalu lintas data.</p>
+                <h2>2. Fungsi Firewall</h2>
+                <p>Firewall berfungsi untuk melindungi jaringan dengan menyaring lalu lintas data, mencegah akses tidak sah, dan mengamankan dari ancaman seperti malware atau peretasan.</p>
+                <h2>3. Cara Kerja Firewall</h2>
+                <p>Firewall bekerja berdasarkan aturan keamanan yang ditentukan untuk memblokir atau mengizinkan lalu lintas data tertentu.</p>
+
+                <div class="company-info">
+                    <p><strong>Gambar berasal dari ChatGPT</strong></p>
+                </div>
+            </div>
+            <div class="routerrr-right"></div>
+        </div>
+
+        <div class="router">
+            <div class="router-left">
+                <h1>Acces Point</h1>
+                <h2>1. Pengertian Acces Point</h2>
+                <p>Access point (AP) adalah perangkat jaringan yang menghubungkan perangkat nirkabel ke jaringan kabel. AP juga dikenal sebagai Wireless Local Area Network (WLAN).</p>
+                <h2>2. Fungsi Acces Point</h2>
+                <p>Access Point berfungsi untuk menghubungkan perangkat ke jaringan lokal secara nirkabel (Wi-Fi) dan memperluas jangkauan sinyal jaringan.</p>
+                <h2>3. Cara Kerja Acces Point</h2>
+                <p>Access Point bekerja dengan menerima sinyal jaringan dari router melalui kabel, lalu memancarkannya sebagai sinyal Wi-Fi agar perangkat dapat terhubung secara nirkabel ke jaringan tersebut.</p>
+
+                <div class="company-info">
+                    <p><strong>Gambar berasal dari ChatGPT</strong></p>
+                </div>
+            </div>
+            <div class="routerrrr-right"></div>
+        </div>
+
+        <div class="jaringan" style="margin: 20px;">
+            <div class="jaringann">
+                <a href="Assesment Jaringan Komputer_Andi Farhan Ashari_607012300056.pdf" download="Tutorial Hosting Website.pdf">File Tutorial</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
