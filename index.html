@@ -3,67 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage Sederhana</title>
+    <title>Business Card</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+        * {
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            box-sizing: border-box;
         }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
+
+        body {
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.4)), url(jaringan\ komputer.webp);
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            position: relative;
         }
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
+
+        h1.page-title {
+            font-family: 'Poppins', sans-serif;
+            position: absolute;
+            top: 30px;
+            left: 50px;
+            font-size: 40px;
+            color: #ffffff;
         }
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
+
+        .card {
+            display: flex;
+            background-color: rgba(0, 0, 0, 0.763);
+            margin-top: -7%;
+            width: 80%;
+            height: 50%;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
-        nav a:hover {
-            color: #ccc;
-        }
-        section {
+
+        .card-left {
             padding: 20px;
+            width: 65%;
+            position: relative;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 50px;
         }
-        footer {
-            background-color: #333;
+
+        .card-left h1 {
+            font-size: 36px;
+            font-weight: bold;
+            color: #e9e9e9;
+            margin-top: 30px;
+        }
+
+        .card-left h2 {
+            font-size: 23px;
             color: #fff;
-            text-align: center;
-            padding: 10px 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 130px;
+        }
+
+        .card-left p {
+            margin: 10px 0;
+            font-size: 20px;
+            color: #dadada;
+        }
+
+        .card-left .company-info {
+            margin-top: 30px;
+            border-top: 1px solid #c8c8c8;
+            padding-top: 20px;
+        }
+
+        .card-left .company-info p {
+            font-size: 18px;
+            color: #dedede;
+        }
+
+        .card-right {
+            width: 35%;
+            background: url('saya.jpg') no-repeat center center;
+            background-size: cover;
         }
     </style>
 </head>
 <body>
+    <h1 class="page-title">Jaringan Komputer</h1>
+    <div class="card">
+        <div class="card-left">
+            <h1>Andi Farhan Ashari</h1>
+            <p>607012300056</p>
+            <h2>D3SI-48-05</h2>
 
-<header>
-    <h1>Selamat Datang di Website Saya</h1>
-</header>
 
-<nav>
-    <a href="#">Beranda</a>
-    <a href="#">Tentang</a>
-    <a href="#">Kontak</a>
-</nav>
-
-<section>
-    <h2>Artikel Terbaru</h2>
-    <p>Ini adalah artikel terbaru di website ini. Silakan baca artikel-artikel menarik kami.</p>
-</section>
-
-<footer>
-    <p>Hak Cipta &copy; 2024 - Nama Anda</p>
-</footer>
+            <div class="company-info">
+                <p><strong>Telkom University</strong></p>
+            </div>
+        </div>
+        <div class="card-right"></div>
+    </div>
 
 </body>
 </html>
